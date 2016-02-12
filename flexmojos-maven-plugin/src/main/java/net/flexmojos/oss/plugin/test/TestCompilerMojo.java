@@ -476,15 +476,6 @@ public class TestCompilerMojo
         {
             imports.append( "import " );
             imports.append( testClass );
-            imports.append( "; " );
-            if ( testClass.indexOf( '.' ) != -1 )
-            {
-                imports.append( testClass.substring( testClass.lastIndexOf( '.' ) + 1 ) );
-            }
-            else
-            {
-                imports.append( testClass );
-            }
             imports.append( ";" );
             imports.append( '\n' );
         }
